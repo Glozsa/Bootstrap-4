@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+    color: #f0f0f0;
+}
+
+#body {
+    min-height: 100vh;
+    background: url(./huddle-landing-page-with-single-introductory-section-master/assets/bg-desktop.svg), hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding: 0 5rem;
+}
+
+#main {
+    margin: 0;
+}
+
+#logo {
+    width: 20rem;
+    padding: 50px 0;
+}
+
+#register {
+    color: hsl(257, 40%, 49%);
+    border-radius: 3rem;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    box-shadow: #262626 0 0 1rem 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #f0f0f0;
+}
+
+#groupone {
+    margin-top: 10px;
+}
+
+.socialmd {
+    width: 40px;
+    filter: invert(100%) sepia(59%) saturate(327%) hue-rotate(184deg) brightness(115%) contrast(88%);
+    transition: all 0.3s ease-in-out;
+    margin: 0 10px;
+}
+
+.socialmd:hover {
+    filter: invert(72%) sepia(62%) saturate(1175%) hue-rotate(231deg) brightness(91%) contrast(100%);
+    cursor: pointer;
+}
+
+#mockup {
+    width: 100%;
+}
+
+#social-md-conainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.head {
+    padding: 50px 0 0 0;
+}
+
+@media (max-width: 990px) {
+
+    #body {
+        background: url(./huddle-landing-page-with-single-introductory-section-master/assets/bg-mobile.svg), hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .socialmd:first-child {
+        margin-right: auto;
+    }
+
+    .socialmd:last-child {
+        margin-left: auto;
+    }
+
+    .socialmd {
+        width: 30px;
+    }
+
+    #social-md-conainer {
+        margin: 50px 0;
+    }
+
+    #logo {
+        margin: 0 auto;
+        width: 15rem;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        font-size: 10px;
+    }
+}
